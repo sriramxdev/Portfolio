@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Zitron",
+    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
+    "images": ["astro-01.webp", "astro-02.jpeg"],
+    "tech": ["Astro", "Tailwind","FastAPI", "Pytorch"],
+    "platforms": ["web", "docker"],
+    "link": "https://github.com/sriramxdev/Zitron",
+    "category": "Medical AI"
+  },
+  {
+    "title": "Astride",
+    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "images": ["A-Stride-icon.png", "#"],
+    "tech": ["Kotlin", "Jetpack Compose", "Privacy by Design"],
+    "platforms": ["android"],
+    "link": "https://sriramxdev.github.io/A-Stride",
+    "category": "Hobbyst App"
+  },
+  {
+    "title": "Echo-Sync",
+    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "images": ["astro-02.jpeg", "#"],
+    "tech": ["Astro","Tailwind","FastAPI", "Pytorch"],
+    "platforms": ["web", "android"],
+    "link": "https://github.com/nbakh16/career-portfolio-template",
+    "category": "Sign Language AI"
+  }
+]

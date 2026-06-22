@@ -1,0 +1,72 @@
+{
+  "name": "Sri Ram Sharma",
+  "photoUrl": "favicon.svg",
+  "intro": "I am a software engineer focused on building clean, efficient backend systems and practical digital solutions from the terminal up. Driven by a philosophy of robust implementation over pure theory,<br> I design high-impact applications that optimize performance at the core.",
+  "introHtml": "I am a software engineer focused on building clean, efficient backend systems and practical digital solutions from the terminal up. Driven by a philosophy of robust implementation over pure theory, I design high-impact applications that optimize performance at the core.",
+  "webpageTitle": "Sri Ram Sharma - Software Engineer",
+  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
+
+  "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/sriramxdev",
+      "icon": "mdi:github",
+      "showInContact": true
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "icon": "mdi:linkedin",
+      "showInContact": true
+    },
+    {
+      "name": "Leetcode",
+      "url": "https://leetcode.com/u/sriram_xdev/",
+      "icon": "devicon-plain:leetcode",
+      "showInContact": false
+    },
+    {
+      "name": "Behance",
+      "url": "#",
+      "icon": "devicon-plain:behance",
+      "showInContact": false
+    },
+    {
+      "name": "Email",
+      "url": "mailto:contact@sriramxdev.me",
+      "icon": "mdi:email",
+      "showInContact": true
+    },
+    {
+      "name": "Whatsapp",
+      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "icon": "mdi:whatsapp",
+      "showInContact": false
+    },
+    {
+      "name": "Facebook",
+      "url": "#",
+      "icon": "mdi:facebook",
+      "showInContact": false
+    },
+    {
+      "name": "Messenger",
+      "url": "#",
+      "icon": "mdi:facebook-messenger",
+      "showInContact": true
+    },
+    {
+      "name": "Instagram",
+      "url": "#",
+      "icon": "mdi:instagram",
+      "showInContact": false
+    },
+    {
+      "name": "Twitter",
+      "url": "https://x.com/sriramxdev",
+      "icon": "mdi:twitter",
+      "showInContact": true
+    }
+  ]
+}

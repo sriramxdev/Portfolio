@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+    "title": "Languages & Frameworks",
+    "skills": [
+      { "name": "Java", "level": 3, "icon": "skill-icons:java-dark" },
+      { "name": "Python", "level": 3, "icon": "skill-icons:python-dark" },
+      { "name": "Kotlin", "level": 3, "icon": "skill-icons:kotlin-dark" }
+    ]
+    },
+    {
+    "title": "AI / ML & Local Inference",
+    "skills": [ 
+      { "name": "PyTorch", "level": 2, "icon": "skill-icons:pytorch-dark" },
+      { "name": "Ollama / Local LLMs", "level": 3, "icon": "simple-icons:ollama" },
+      { "name": "Hugging Face Spaces", "level": 2, "icon": "devicon:huggingface" },
+      { "name": "Scikit-Learn", "level": 2, "icon": "skill-icons:scikitlearn-dark" },
+      { "name": "NumPy", "level": 2, "icon": "devicon:numpy" }
+    ]
+    },
+    {
+    "title": "Mobile Development",
+    "skills": [
+      { "name": "Android SDK", "level": 3, "icon": "skill-icons:androidstudio-dark" },
+      { "name": "Jetpack Compose", "level": 3, "icon": "devicon:jetpackcompose" }
+    ]
+    },
+    {
+    "title": "Backend Engineering",
+    "skills": [
+      { "name": "FastAPI", "level": 3, "icon": "skill-icons:fastapi" },
+      { "name": "Streamlit", "level": 3, "icon": "devicon:streamlit" }
+    ]
+    },
+    {
+    "title": "Web & Interface Layers",
+    "skills": [
+      { "name": "Astro Framework", "level": 3, "icon": "devicon:astro" },
+      { "name": "Cloudflare Pages", "level": 2, "icon": "devicon:cloudflare" },
+      { "name": "Tailwind CSS", "level": 2, "icon": "devicon:tailwindcss" }
+    ]
+    },
+    {
+    "title": "Database & Storage Layers",
+    "skills": [
+      { "name": "MongoDB / BSON", "level": 2, "icon": "skill-icons:mongodb" },
+      { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
+      { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" },
+      { "name": "Supabase", "level": 2, "icon": "skill-icons:supabase-dark" },
+      { "name": "MySQL", "level": 2, "icon": "skill-icons:mysql-dark" }
+    ]
+    },
+    {
+      "title": "Core Engineering & DevOps",
+      "skills": [
+        { "name": "Git", "level": 1, "icon": "skill-icons:git" },
+        { "name": "GitHub", "level": 1, "icon": "skill-icons:github-dark" },
+        { "name": "Docker", "level": 1, "icon": "skill-icons:docker" },
+        { "name": "Podman", "level": 1, "icon": "devicon:podman" },
+        { "name": "Pixi", "level": 2, "icon": "catppuccin:pixi" },
+        { "name": "Linux (Fedora & Ubuntu)", "level": 2, "icon": "skill-icons:linux-dark" },
+        { "name": "Bash Shell scripting", "level": 3, "icon": "skill-icons:bash-dark" }
+      ]
+    }
+  ]
+}
