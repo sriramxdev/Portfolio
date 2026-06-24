@@ -22,7 +22,7 @@
     },
     {
       "name": "Leetcode",
-      "url": "https://leetcode.com/u/sriram_xdev/",
+      "url": "#",
       "icon": "devicon-plain:leetcode",
       "showInContact": false
     },
@@ -40,7 +40,7 @@
     },
     {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "#",
       "icon": "mdi:whatsapp",
       "showInContact": false
     },
@@ -54,7 +54,7 @@
       "name": "Messenger",
       "url": "#",
       "icon": "mdi:facebook-messenger",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Instagram",
