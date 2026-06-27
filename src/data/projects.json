@@ -10,7 +10,7 @@
   },
   {
     "title": "Astride",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "description": "A privacy friendly pedometer mobile application built with modern frameworks.",
     "images": ["A-Stride-icon.png", "#"],
     "tech": ["Kotlin", "Jetpack Compose", "Privacy by Design"],
     "platforms": ["android"],
@@ -19,9 +19,9 @@
   },
   {
     "title": "Echo-Sync",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "description": "A sign-language translation system under development as a major project.",
     "images": ["astro-02.jpeg", "#"],
-    "tech": ["Astro","Tailwind","FastAPI", "Pytorch"],
+    "tech": ["Astro","Tailwind","FastAPI", "Pytorch", "OpenCV", "Mediapipe", "SaaS"],
     "platforms": ["web", "android"],
     "link": "https://github.com/nbakh16/career-portfolio-template",
     "category": "Sign Language AI"
