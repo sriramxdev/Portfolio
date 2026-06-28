@@ -1,5 +1,13 @@
 [
   {
+  "company": "IBM",
+  "role": "Artificial Intelligence Virtual Intern",
+  "period": "06 Sep 2025 - 07 Nov 2025",
+  "type": "Remote / Virtual Internship",
+  "description": "Completed a structured AI engineering track via the IBM Developer Skills Network. Engineered and optimized a custom Convolutional Neural Network (CNN) for binary image classification, implementing data augmentation, dropout regularization, and binary cross-entropy to achieve an 89% validation accuracy.",
+  "skills": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Computer Vision", "CNN", "TensorFlow", "Problem Solving"]
+  },
+  {
     "company": "United College of Engineering and Research",
     "role": "B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine Learning)",
     "period": "Jun 2023 - Jun 2027",

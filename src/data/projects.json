@@ -23,7 +23,7 @@
     "images": ["astro-02.jpeg", "#"],
     "tech": ["Astro","Tailwind","FastAPI", "Pytorch", "OpenCV", "Mediapipe", "SaaS"],
     "platforms": ["web", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
+    "link": "#",
     "category": "Sign Language AI"
   }
 ]
