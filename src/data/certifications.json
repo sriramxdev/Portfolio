@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Artificial Intelligence Virtual Intern",
+    "issuer": "IBM",
+    "period": "06 Sep 2025 - 07 Nov 2025",
+    "summary": "Virtual internship focused on AI fundamentals, applied workflows, and practical problem solving.",
+    "details": ["AI Fundamentals", "Virtual Internship", "Verified Credential"],
+    "icon": "cib:ibm",
+    "link": "https://courses.ibmmooc.skillsnetwork.site/certificates/4cf7ed168eff4bfab5bdecdacfa541ff"
+  },
+  {
+    "title": "MongoDB Associate Developer",
+    "issuer": "MongoDB",
+    "period": "Expected: August 2026",
+    "summary": "MongoDB Associate Developer certification validates proficiency in MongoDB, including CRUD operations, data modeling, and aggregation framework.",
+    "details": ["MongoDB", "Database", "Verified Credential", "CRUD Operations", "Data Modeling", "Aggregation Framework"],
+    "icon": "skill-icons:mongodb",
+    "link": "#"
+  },
+  {
+    "title": "Github Foundations",
+    "issuer": "GitHub",
+    "period": "In Progress",
+    "summary": "GitHub Foundations certification demonstrates proficiency in using GitHub for version control, collaboration, and project management.",
+    "details": ["GitHub", "Version Control", "Collaboration", "Project Management"],
+    "icon": "skill-icons:github-dark",
+    "link": "#"
+  }
+]

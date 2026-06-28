@@ -1,0 +1,138 @@
+---
+import { Icon } from 'astro-icon/components';
+import localCertifications from '../data/certifications.json';
+
+interface Certification {
+  title: string;
+  issuer: string;
+  period: string;
+  summary: string;
+  details: string[];
+  icon: string;
+  link: string;
+}
+
+const certifications = localCertifications as Certification[];
+---
+
+<section id="certifications" class="section-container">
+  <div class="container mx-auto">
+    <div class="space-y-12">
+      <div class="cert-header opacity-0 mb-16">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
+          <span class="text-accent">/</span> Certifications
+        </h2>
+        <p class="text-subtext font-body text-sm max-w-md">
+          My certifications and more, including completed courses and credentials.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        {certifications.map((certification) => (
+          <article class="cert-card group relative overflow-hidden opacity-0 p-6 bg-accent/5 border border-accent/10 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all duration-300 text-left">
+            <div class="flex items-start justify-between gap-4 mb-4 transition-all duration-300 group-hover:mb-5">
+              <div class="flex items-center gap-4 min-w-0 flex-1">
+                <Icon
+                  name={certification.icon}
+                  class="w-10 h-10 text-accent shrink-0 group-hover:scale-110 transition-transform duration-300"
+                />
+                <div class="min-w-0">
+                  <h3 class="text-maintext font-bold mt-1 leading-snug wrap-break-word whitespace-normal transition-all duration-300 group-hover:translate-y-0 group-hover:scale-[1.01]">{certification.title}</h3>
+                </div>
+              </div>
+
+              <a
+                href={certification.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-xl border border-accent/10 bg-background/60 text-accent/75 hover:text-accent hover:border-accent/40 hover:bg-background transition-all duration-300 group-hover:scale-105"
+                aria-label={`Open ${certification.title}`}
+              >
+                <Icon name="mdi:open-in-new" class="w-5 h-5" />
+              </a>
+            </div>
+
+            <p class="text-subtext text-sm mb-0.5 wrap-break-word transition-all duration-300 group-hover:text-maintext">
+              {certification.issuer}
+            </p>
+
+            <p class="font-mono text-xs tracking-widest uppercase text-accent/75 mb-3 whitespace-nowrap transition-all duration-300 group-hover:text-accent">
+              {certification.period}
+            </p>
+
+            <div class="cert-summary-wrap overflow-hidden max-h-10 group-hover:max-h-32 transition-all duration-300 ease-in-out">
+              <p class="text-subtext text-sm leading-relaxed group-hover:text-maintext">
+                {certification.summary}
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-4">
+              {certification.details.map((detail) => (
+                <span class="rounded-md text-[10px] px-2 py-1 bg-accent/5 border border-accent/10 text-accent/80 group-hover:border-accent/40 group-hover:text-accent transition-all duration-300">
+                  {detail}
+                </span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cert-header,
+  .cert-footer {
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .cert-card {
+    transform: translateY(20px) scale(0.95);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .cert-header.reveal,
+  .cert-card.reveal,
+  .cert-footer.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1);
+  }
+</style>
+
+<script>
+  const revealCertifications = () => {
+    const header = document.querySelector('.cert-header');
+    const footer = document.querySelector('.cert-footer');
+    const cards = document.querySelectorAll('.cert-card');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target as HTMLElement;
+
+          if (target.classList.contains('cert-card')) {
+            const index = Array.from(cards).indexOf(target);
+            setTimeout(() => {
+              target.classList.add('reveal');
+            }, (index % 4) * 150);
+          } else {
+            target.classList.add('reveal');
+          }
+
+          observer.unobserve(target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -10px 0px'
+    });
+
+    if (header) observer.observe(header);
+    if (footer) observer.observe(footer);
+    cards.forEach(card => observer.observe(card));
+  }
+
+  window.addEventListener('load', revealCertifications);
+  document.addEventListener('astro:after-swap', revealCertifications);
+</script>

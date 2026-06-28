@@ -17,7 +17,8 @@ export default defineConfig({
         "skill-icons": ["*"],
         "simple-icons": ["*"],
         "devicon": ["*"],
-        "catppuccin": ["*"]
+        "catppuccin": ["*"],
+        "cibpn": ["*"],
       }
     })
   ]
