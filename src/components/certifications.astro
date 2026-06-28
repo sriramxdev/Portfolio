@@ -29,44 +29,44 @@ const certifications = localCertifications as Certification[];
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         {certifications.map((certification) => (
-          <article class="cert-card group relative overflow-hidden opacity-0 p-6 bg-accent/5 border border-accent/10 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all duration-300 text-left">
-            <div class="flex items-start justify-between gap-4 mb-4 transition-all duration-300 group-hover:mb-5">
+          <article class="cert-card group relative overflow-hidden opacity-0 p-6 bg-accent/5 border border-accent/10 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all duration-300 text-left flex flex-col min-h-64 sm:min-h-68 lg:min-h-72">
+            <div class="cert-card-header flex items-start justify-between gap-4 mb-4 transition-all duration-300 group-hover:mb-5">
               <div class="flex items-center gap-4 min-w-0 flex-1">
                 <Icon
+                  class="cert-card-icon w-10 h-10 text-accent shrink-0 group-hover:scale-110 transition-transform duration-300"
                   name={certification.icon}
-                  class="w-10 h-10 text-accent shrink-0 group-hover:scale-110 transition-transform duration-300"
                 />
                 <div class="min-w-0">
-                  <h3 class="text-maintext font-bold mt-1 leading-snug wrap-break-word whitespace-normal transition-all duration-300 group-hover:translate-y-0 group-hover:scale-[1.01]">{certification.title}</h3>
+                  <h3 class="cert-card-title text-maintext font-bold mt-1 leading-snug wrap-break-word whitespace-normal transition-all duration-300 group-hover:translate-y-0 group-hover:scale-[1.01]">{certification.title}</h3>
                 </div>
               </div>
 
               <a
+                class="cert-card-link shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-xl border border-accent/10 bg-background/60 text-accent/75 hover:text-accent hover:border-accent/40 hover:bg-background transition-all duration-300 group-hover:scale-105"
                 href={certification.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-xl border border-accent/10 bg-background/60 text-accent/75 hover:text-accent hover:border-accent/40 hover:bg-background transition-all duration-300 group-hover:scale-105"
                 aria-label={`Open ${certification.title}`}
               >
                 <Icon name="mdi:open-in-new" class="w-5 h-5" />
               </a>
             </div>
 
-            <p class="text-subtext text-sm mb-0.5 wrap-break-word transition-all duration-300 group-hover:text-maintext">
+            <p class="cert-card-issuer text-subtext text-sm mb-0.5 wrap-break-word transition-all duration-300 group-hover:text-maintext">
               {certification.issuer}
             </p>
 
-            <p class="font-mono text-xs tracking-widest uppercase text-accent/75 mb-3 whitespace-nowrap transition-all duration-300 group-hover:text-accent">
+            <p class="cert-card-period font-mono text-xs tracking-widest uppercase text-accent/75 mb-3 whitespace-nowrap transition-all duration-300 group-hover:text-accent">
               {certification.period}
             </p>
 
-            <div class="cert-summary-wrap overflow-hidden max-h-10 group-hover:max-h-32 transition-all duration-300 ease-in-out">
+            <div class="cert-card-summary overflow-hidden max-h-10 group-hover:max-h-32 transition-all duration-300 ease-in-out">
               <p class="text-subtext text-sm leading-relaxed group-hover:text-maintext">
                 {certification.summary}
               </p>
             </div>
 
-            <div class="flex flex-wrap gap-2 pt-4">
+            <div class="cert-card-details mt-4 flex flex-wrap gap-2">
               {certification.details.map((detail) => (
                 <span class="rounded-md text-[10px] px-2 py-1 bg-accent/5 border border-accent/10 text-accent/80 group-hover:border-accent/40 group-hover:text-accent transition-all duration-300">
                   {detail}
@@ -90,6 +90,38 @@ const certifications = localCertifications as Certification[];
   .cert-card {
     transform: translateY(20px) scale(0.95);
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .cert-card.is-expanded {
+    border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    transform: translateY(0) scale(1.01);
+  }
+
+  .cert-card.is-expanded .cert-card-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .cert-card.is-expanded .cert-card-icon {
+    transform: scale(1.1);
+  }
+
+  .cert-card.is-expanded .cert-card-title,
+  .cert-card.is-expanded .cert-card-issuer {
+    color: var(--color-maintext);
+  }
+
+  .cert-card.is-expanded .cert-card-period {
+    color: var(--color-accent);
+  }
+
+  .cert-card.is-expanded .cert-card-summary {
+    max-height: 8rem;
+  }
+
+  .cert-card.is-expanded .cert-card-details span {
+    border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+    color: var(--color-accent);
   }
 
   .cert-header.reveal,
@@ -133,6 +165,46 @@ const certifications = localCertifications as Certification[];
     cards.forEach(card => observer.observe(card));
   }
 
+  const initTouchExpansion = () => {
+    const touchMedia = window.matchMedia('(hover: none) and (pointer: coarse)');
+    const cards = document.querySelectorAll('.cert-card');
+
+    const clearExpanded = (except?: HTMLElement | null) => {
+      cards.forEach((card) => {
+        if (card !== except) {
+          card.classList.remove('is-expanded');
+        }
+      });
+    };
+
+    cards.forEach((card) => {
+      const element = card as HTMLElement;
+
+      element.addEventListener('click', (event) => {
+        if (!touchMedia.matches) return;
+
+        if ((event.target as HTMLElement)?.closest('a')) {
+          return;
+        }
+
+        const isExpanded = element.classList.contains('is-expanded');
+        clearExpanded(isExpanded ? null : element);
+        element.classList.toggle('is-expanded', !isExpanded);
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!touchMedia.matches) return;
+
+      const target = event.target as HTMLElement;
+      if (!target.closest('.cert-card')) {
+        clearExpanded();
+      }
+    });
+  }
+
   window.addEventListener('load', revealCertifications);
+  window.addEventListener('load', initTouchExpansion);
   document.addEventListener('astro:after-swap', revealCertifications);
+  document.addEventListener('astro:after-swap', initTouchExpansion);
 </script>
