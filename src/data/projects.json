@@ -1,5 +1,14 @@
 [
   {
+    "title": "Cats & Dogs AI Classifier",
+    "description": "A 4-layer CNN image classification model with a custom dark-themed glassmorphism Gradio interface deployed for low-latency inference.",
+    "images": ["hf_cnn_01.png", "hf_cnn_02.png"],
+    "tech": ["Python", "Tensorflow", "Gradio"],
+    "platforms": ["web"],
+    "link": "https://huggingface.co/spaces/sriramxdev/Cats-and-Dogs-Classifier",
+    "category": "Computer Vision"
+  },
+  {
     "title": "Zitron",
     "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
     "images": ["astro-01.webp", "astro-02.jpeg"],
