@@ -3,9 +3,10 @@
     {
     "title": "Languages & Frameworks",
     "skills": [
-      { "name": "Java", "level": 3, "icon": "skill-icons:java-dark" },
+      { "name": "Java", "level": 2, "icon": "skill-icons:java-dark" },
       { "name": "Python", "level": 3, "icon": "skill-icons:python-dark" },
-      { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
+      { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" },
+      { "name": "Golang", "level": 1, "icon": "skill-icons:golang" }
     ]
     },
     {
@@ -57,7 +58,7 @@
         { "name": "GitHub", "level": 2, "icon": "skill-icons:github-dark" },
         { "name": "Docker", "level": 2, "icon": "skill-icons:docker" },
         { "name": "Podman", "level": 2, "icon": "devicon:podman" },
-        { "name": "Pixi", "level": 2, "icon": "catppuccin:pixi" },
+        { "name": "n8n", "level": 2, "icon": "simple-icons:n8n" },
         { "name": "Linux (Fedora & Ubuntu)", "level": 2, "icon": "skill-icons:linux-dark" },
         { "name": "Bash Shell scripting", "level": 2, "icon": "skill-icons:bash-dark" }
       ]

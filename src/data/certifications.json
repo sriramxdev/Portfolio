@@ -11,7 +11,7 @@
   {
     "title": "MongoDB Associate Developer",
     "issuer": "MongoDB",
-    "period": "Expected: August 2026",
+    "period": "In Progress",
     "summary": "MongoDB Associate Developer certification validates proficiency in MongoDB, including CRUD operations, data modeling, and aggregation framework.",
     "details": ["MongoDB", "Database", "Verified Credential", "CRUD Operations", "Data Modeling", "Aggregation Framework"],
     "icon": "skill-icons:mongodb",
@@ -20,7 +20,7 @@
   {
     "title": "Github Foundations",
     "issuer": "GitHub",
-    "period": "In Progress",
+    "period": "Expected, August 2026",
     "summary": "GitHub Foundations certification demonstrates proficiency in using GitHub for version control, collaboration, and project management.",
     "details": ["GitHub", "Version Control", "Collaboration", "Project Management"],
     "icon": "skill-icons:github-dark",
