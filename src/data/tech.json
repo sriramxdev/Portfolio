@@ -60,7 +60,8 @@
         { "name": "Podman", "level": 2, "icon": "devicon:podman" },
         { "name": "n8n", "level": 2, "icon": "simple-icons:n8n" },
         { "name": "Linux (Fedora & Ubuntu)", "level": 2, "icon": "skill-icons:linux-dark" },
-        { "name": "Bash Shell scripting", "level": 2, "icon": "skill-icons:bash-dark" }
+        { "name": "Bash Shell scripting", "level": 2, "icon": "skill-icons:bash-dark" },
+        { "name": "Linear", "level": 2, "icon": "simple-icons:linear" }
       ]
     }
   ]
