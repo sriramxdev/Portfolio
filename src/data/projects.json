@@ -25,5 +25,14 @@
     "platforms": ["web", "docker"],
     "link": "https://github.com/sriramxdev/Zitron",
     "category": "Medical AI"
+  },
+  {
+    "title": "PDF-JSON Parser",
+    "description": "A simple yet effective parser for extracting structured data from PDF files and converting it to JSON format.",
+    "images": ["pdfparser-01.png", "pdfparser-02.png"],
+    "tech": ["Python", "PyPDF2", "JSON", "Flask"],
+    "platforms": ["web"],
+    "link": "https://pdfparserproject.sriramxdev.me/",
+    "category": "Data Processing"
   }
 ]
