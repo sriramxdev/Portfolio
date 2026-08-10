@@ -18,15 +18,6 @@
     "category": "Hobbyst App"
   },
   {
-    "title": "Zitron",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind","FastAPI", "Pytorch"],
-    "platforms": ["web", "docker"],
-    "link": "https://github.com/sriramxdev/Zitron",
-    "category": "Medical AI"
-  },
-  {
     "title": "PDF-JSON Parser",
     "description": "A simple yet effective parser for extracting structured data from PDF files and converting it to JSON format.",
     "images": ["pdfparser-01.png", "pdfparser-02.png"],
