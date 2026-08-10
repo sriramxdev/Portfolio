@@ -14,7 +14,7 @@
     "images": ["pdfparser-01.png", "pdfparser-02.png"],
     "tech": ["Python", "PyPDF2", "JSON", "Flask"],
     "platforms": ["web"],
-    "link": "https://pdfparserproject.sriramxdev.me/",
+    "link": "https://pdf-parser-kecex5screzuwt7ibulfik.streamlit.app/",
     "category": "Data Processing"
   },
   {
