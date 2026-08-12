@@ -7,6 +7,7 @@
         { "name": "Java", "level": 2, "icon": "skill-icons:java-dark" },
         { "name": "TypeScript", "level": 2, "icon": "skill-icons:typescript" },
         { "name": "Rust", "level": 1, "icon": "skill-icons:rust" },
+        { "name": "C", "level":2, "icon": "skill-icons:c"},
         { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
       ]
     },
