@@ -15,7 +15,7 @@ interface Certification {
 const certifications = localCertifications as Certification[];
 ---
 
-<section id="certifications" class="section-container" style="display:none;">
+<section id="certifications" class="section-container">
   <div class="container mx-auto">
     <div class="space-y-12">
       <div class="cert-header opacity-0 mb-16">
@@ -32,10 +32,12 @@ const certifications = localCertifications as Certification[];
           <article class="cert-card group relative overflow-hidden opacity-0 p-6 bg-accent/5 border border-accent/10 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all duration-300 text-left flex flex-col min-h-64 sm:min-h-68 lg:min-h-72">
             <div class="cert-card-header flex items-start justify-between gap-4 mb-4 transition-all duration-300 group-hover:mb-5">
               <div class="flex items-center gap-4 min-w-0 flex-1">
-                <Icon
-                  class="cert-card-icon w-10 h-10 text-accent shrink-0 group-hover:scale-110 transition-transform duration-300"
-                  name={certification.icon}
-                />
+                <!-- EDITED: Conditional check for local SVG paths vs Iconify icons -->
+                {certification.icon.endsWith('.svg') ? (
+                  <img src={certification.icon} alt={certification.title} class="cert-card-icon w-10 h-10 object-contain shrink-0 group-hover:scale-110 transition-transform duration-300"/>
+                ) : (
+                  <Icon name={certification.icon} class="cert-card-icon w-10 h-10 text-accent shrink-0 group-hover:scale-110 transition-transform duration-300"/>
+                )}
                 <div class="min-w-0">
                   <h3 class="cert-card-title text-maintext font-bold mt-1 leading-snug wrap-break-word whitespace-normal transition-all duration-300 group-hover:translate-y-0 group-hover:scale-[1.01]">{certification.title}</h3>
                 </div>

@@ -1,3 +1,11 @@
 [
- 
+ {
+    "title": "Github Foundations",
+    "issuer": "GitHub",
+    "period": "21 Aug 2026 - 22 Aug 2028",
+    "summary": "GitHub Foundations certification demonstrates proficiency in using GitHub for version control, collaboration, and project management.",
+    "details": ["Git", "GitHub", "Version Control", "Collaboration", "Project Management", "GitHub Actions", "GitHub Pages", "OpenSource", "DVCS", "CodeSpaces", "GitHub CLI", "GitHub Copilot"],
+    "icon": "github-foundations.svg",
+    "link": "https://learn.microsoft.com/en-us/users/sriramxdev/credentials/582C8D1EFCEF3B0C"
+  }
 ]
