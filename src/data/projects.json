@@ -1,5 +1,23 @@
 [
   {
+    "title": "Echo-Sync: Real-Time Edge-Optimized Sign Language Translation System",
+    "description": "An end-to-end continuous sign language translator combining a 75-keypoint canonical topology with an ST-GCN foundation model for sub-100ms inference. Leverages kinematic token pruning to maintain real-time performance across variable camera frame rates.",
+    "images": ["echosync-01.png", "echosync-02.png"],
+    "tech": ["PyTorch", "ST-GCN", "MediaPipe", "OpenCV", "FastAPI", "DynaPrune", "Docker"],
+    "platforms": ["web", "edge", "linux"],
+    "link": "https://github.com/sriramxdev/Echo-Sync",
+    "category": "Computer Vision / Applied Deep Learning"
+  },
+  {
+    "title": "DynaPrune: High-Throughput Kinematic Token Pruning & Coordinate Normalizer",
+    "description": "A high-throughput Rust engine that prunes redundant skeletal frames using hand velocity thresholds to minimize inference overhead. Features SIMD-accelerated spatial normalization and cubic spline interpolation with zero-copy Python/C bindings.",
+    "images": ["dynaprune-01.png", "dynaprune-02.png"],
+    "tech": ["Rust", "C/C++ FFI", "PyO3", "SIMD Vectorization", "NumPy C-API", "Mathematical Kinematics"],
+    "platforms": ["linux", "windows"],
+    "link": "https://github.com/sriramxdev/dynaprune",
+    "category": "Systems Engineering / ML Infrastructure"
+  },
+  {
     "title": "Astride",
     "description": "A privacy friendly pedometer mobile application built with modern frameworks.",
     "images": ["A-Stride-icon.png", "#"],
@@ -16,14 +34,6 @@
     "platforms": ["web"],
     "link": "https://pdf-parser-kecex5screzuwt7ibulfik.streamlit.app/",
     "category": "Data Processing"
-  },
-  {
-    "title": "Cats & Dogs AI Classifier",
-    "description": "A 4-layer CNN image classification model with a custom dark-themed glassmorphism Gradio interface deployed for low-latency inference.",
-    "images": ["hf_cnn_01.png", "hf_cnn_02.png"],
-    "tech": ["Python", "Tensorflow", "Gradio"],
-    "platforms": ["web"],
-    "link": "https://huggingface.co/spaces/sriramxdev/Cats-and-Dogs-Classifier",
-    "category": "Computer Vision"
   }
+
 ]
