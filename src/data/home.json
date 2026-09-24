@@ -22,9 +22,9 @@
     },
     {
       "name": "Leetcode",
-      "url": "#",
+      "url": "https://leetcode.com/u/sriramxdev/",
       "icon": "devicon-plain:leetcode",
-      "showInContact": false
+      "showInContact": true
     },
     {
       "name": "Behance",
