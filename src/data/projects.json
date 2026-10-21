@@ -40,7 +40,7 @@
   "description": "A modular developer workbench housing an expanding collection of high-utility automation scripts, media pipelines, and custom parsers.",
   "images": ["utilitorium-01.png"],
   "tech": ["Astro", "Tailwind CSS", "TypeScript", "Python", "Node.js"],
-  "platforms": ["Web", "CLI"],
+  "platforms": ["web", "linux", "windows"],
   "link": "https://github.com/your-username/Utilitorium",
   "category": "Developer Tools & Utilities"
 }
